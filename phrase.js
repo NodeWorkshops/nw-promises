@@ -8,7 +8,8 @@ function fetchPhrase(cb) {
         cb('Ops...something went wrong!');
       } else {
         const {quoteText} = JSON.parse(body.replace(/\'/g, "'"));
-        // console.log("Quote:", quoteText);
+
+        console.log("Quote:", quoteText);
         cb(null, quoteText);
       }
     });
