@@ -6,9 +6,10 @@ fs.readFile('./data.txt', (err, data) => {
   }
   console.log("Done reading async!");
   const fileLength = data.toString().length;
-  fs.writeFile('/tmp/output.txt', fileLength, (err, data) => {
+  fs.writeFile('/tmp/output.txt', fileLength, (err) => {
     if (err) {
         return console.error(err.message);    
     }    
+    console.log("Done writing file!");
   });
 });
