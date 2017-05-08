@@ -1,1 +1,1 @@
-yes "Some text" | head -n 100000000 > data2.txt
+yes "Some text" | head -n 100000000 > data.txt
