@@ -7,7 +7,7 @@ function fetchPhrase(cb) {
         console.log("There was an error fetching the quote");
         cb('Ops...something went wrong!');
       } else {
-        const {quoteText} = JSON.parse(body.replace(/\'/g, "'"));
+        const {quoteText} = JSON.parse(body.replace(/\\'/g, "'"));
         // console.log("Quote:", quoteText);
         cb(null, quoteText);
       }
