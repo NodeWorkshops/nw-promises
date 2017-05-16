@@ -30,9 +30,13 @@ function fetchPhraseAsPromised() {
 
 
 async function fetchWithAsync() {
-    const phrase = await fetchPhraseAsPromised();
-    console.log(phrase);
-
+    try {
+        const phrase = await fetchPhraseAsPromised();
+        console.log(phrase)
+    }
+    catch (e) {
+        console.log(e.message)
+    }
 }
 
 fetchWithAsync();
