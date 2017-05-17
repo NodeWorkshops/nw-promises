@@ -7,7 +7,9 @@ console.log("Done reading file");
 
 // Show that it DOESN'T block before printing "Done reading file"
 // Introduce concept of callback
-fs.readFile('./data.txt', (err, data) => {
-  if (err) throw err;
-  console.log("Done reading async!");
-});
+
+// fs.readFile('./data.txt', (err, data) => {
+//   if (err) throw err;
+//   console.log("Done reading async!");
+// });
+// console.log("Continue with other work");

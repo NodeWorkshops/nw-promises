@@ -29,14 +29,4 @@ function fetchPhraseAsPromised() {
 }
 
 
-// new Promise(handler)
-// const promises = [fetchPhraseAsPromised(), fetchPhraseAsPromised(), fetchPhraseAsPromised()];
-// Promise.all(promises).then(dataList => dataList.join.length);
 
-// throw "ERROR";
-
-// fetchPhraseAsPromised()
-//     .then(data1 => fetchPhraseAsPromised().then(data => { throw "BLAH BLASH" }))
-//     .then(data2 => fetchPhraseAsPromised().then(data => data+data2))
-//     .then(data3 => console.log(data3.length))
-//     .catch(err => console.error("ERR: " + err));

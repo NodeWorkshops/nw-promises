@@ -72,10 +72,10 @@ function convertToYoda(phrase) {
 const runChallange = async () => {
    try {
         const phrase = await fetchPhraseAsPromised()
-        const yodaPhrase = await convertToYoda(phrase) 
-        const tweetResponse = await tweetThis(yodaPhrase) 
+        const yodaPhrase = await convertToYoda(phrase)
+        const tweetResponse = await tweetThis(yodaPhrase)
         console.log(tweetResponse)
-   } 
+   }
    catch (e) {
         console.log(e)
    }
