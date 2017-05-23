@@ -35,4 +35,5 @@ Add the following content to it:
 ```
 
 Don't use: `node index.js`
+
 Instead use: `.\node_modules\.bin\babel-node index.js` 
