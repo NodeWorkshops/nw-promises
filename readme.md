@@ -13,12 +13,17 @@ Meetup group:
 https://www.meetup.com/NodeWorkshops/
 
 
+Almost all the examples will work on Node 6, so you don't need to install node 7 or configure Babel. 
+
+Async await will work out of the box on Node 7. If you don't want to install that, then you can use Babel as descibed below. 
+
+
 Node 7 can be installed from here:
 
 https://nodejs.org/en/
 
 
-If you have node 6 and you want to try async await then follow these steps:
+If you don't want to install node 7 and you want to try async await then follow these steps:
 ```
 npm install -g babel-cli --save-dev
 npm install babel-preset-env --save-dev
